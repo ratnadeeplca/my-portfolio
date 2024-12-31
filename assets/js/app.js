@@ -58,7 +58,7 @@ jQuery('.stellarnav').stellarNav({
 
 // Get the button and circle
 let scrollTopBtn = document.getElementById("scrollTopBtn");
-let circle = document.querySelector("#scrollTopBtn svg circle");
+let circle = document.querySelector("#scrollTopBtn svg #top-circle");
 
 // Get the maximum scrollable height of the page
 function getMaxScroll() {
