@@ -50,6 +50,12 @@
     }   
 }
 
+@media only screen and (max-width: 1199px) {
+    .my-portfolio-section .card {
+        /* height: 371px; */
+    }
+}
+
 
 @media only screen and (max-width: 1182px) {
     .contact-section .right-block {
@@ -134,7 +140,7 @@
     }
 
     .my-portfolio-section .card {
-        height: 400px;
+        /* height: 400px; */
     }
 
     .my-skills-section .skills-card .img-block i {
@@ -213,6 +219,18 @@
         display: none;
     }
 
+    .about-me-section {
+        padding: 50px 0;
+    }
+
+    .my-portfolio-section {
+        padding: 50px 0 50px 0;
+    }
+
+    .my-skills-section {
+        padding: 50px 0 50px 0;
+    }
+
     .my-skills-section .skills-card .img-block i {
         font-size: 80px;
     }
@@ -221,14 +239,12 @@
         font-size: 17px;
     }
 
+    .contact-section {
+        padding: 60px 0;
+    }
+
     .contact-section .left-block .form-block .form-control{
         box-shadow: 0 0 10px rgba(135, 80, 247, 0.2);
-    }
-}
-
-@media only screen and (max-width: 422px) {
-    .header-banner-wrapper .banner-section .left-block .bottom-icon {
-        flex-direction: column-reverse;
     }
 }
 
@@ -261,6 +277,31 @@
 
     .contact-section .right-block .icon-box .text span {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .my-portfolio-section .card {
+        /* height: 350px; */
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .my-portfolio-section .card {
+        padding: 25px 25px 0 25px;
+    }
+}
+
+
+@media only screen and (max-width: 422px) {
+    .header-banner-wrapper .banner-section .left-block .bottom-icon {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .my-portfolio-section .card {
+        padding: 30px 15px 0 15px;
     }
 }
 

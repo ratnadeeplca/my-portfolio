@@ -1,3 +1,20 @@
+function push_css_link(url){
+    const timestamp = new Date().getTime(); // Get current timestamp
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = `./assets/css/${url}.css?version=${timestamp}`; // Append timestamp
+    document.head.appendChild(link);
+}
+
+push_css_link("style");
+push_css_link("responsive");
+
+
+
+
+
+
+
 jQuery('.stellarnav').stellarNav({
     theme: 'plain', // adds default color to nav. (light, dark)
     breakpoint: 991, // number in pixels to determine when the nav should turn mobile friendly
@@ -87,3 +104,6 @@ document.getElementById('myForm').addEventListener('submit', function() {
         this.reset(); // Clears all fields
     }, 100); // A short delay to ensure the submission happens first
 });
+
+let Year = new Date().getFullYear();
+document.querySelector("footer .copy-right p span").textContent = Year;

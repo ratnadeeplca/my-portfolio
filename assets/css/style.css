@@ -3,6 +3,7 @@
     --blue-bcg: #0f0715;
     --black-bcg: #050709;
     --primary-color: #8750f7;
+    --white: #ffffff;
     --animation-font: "Russo One", serif;
 }
 
@@ -86,7 +87,7 @@ p{
 
 /* Sticky Header */
 .sticky{
-    background-color: #000000aa !important;
+    background-color: #000000c4 !important;
     backdrop-filter: blur(6px);
     position: fixed;
     top: 0;
@@ -106,7 +107,7 @@ p{
 .header-banner-wrapper header .logo-email-block .email-block a{
     font-family: inherit;
     font-size: 15px;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     line-height: 1.3;
     padding: 0;
@@ -116,7 +117,7 @@ p{
 .header-banner-wrapper header .logo-email-block .logo-block a{
     font-family: inherit;
     font-size: 25px;
-    color: #fff;
+    color: var(--white);
 }
 
 .header-banner-wrapper header .nav-button-block{
@@ -139,7 +140,7 @@ p{
 .header-banner-wrapper header .nav-button-block .stellarnav ul li{
     font-family: inherit;
     font-size: 15px;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     line-height: 1.3;
     text-transform: capitalize;
@@ -148,7 +149,7 @@ p{
 }
 
 .header-banner-wrapper header .nav-button-block .stellarnav ul li a{
-    color: #fff;
+    color: var(--white);
     padding: 0;
     position: relative;
     transition: 0.4s;
@@ -180,7 +181,7 @@ p{
 .header-banner-wrapper header .nav-button-block .btn-block .hire-me-btn{
     font-family: inherit;
     font-size: 15px;
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     line-height: 1;
     background-size: 200%;
@@ -242,7 +243,7 @@ p{
 .header-banner-wrapper .banner-section .left-block .top-text h3{
     font-family: inherit;
     font-size: clamp(1.375rem, 1.2824rem + 0.4938vw, 1.875rem);
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     line-height: 1.3;
     padding-bottom: 15px;
@@ -254,7 +255,7 @@ p{
 .header-banner-wrapper .banner-section .left-block .top-text p{
     font-family: inherit;
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     font-weight: 300;
     line-height: 1.5;
     order: 3;
@@ -292,11 +293,11 @@ p{
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon a.download-btn:hover{
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
 }
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon a.download-btn:hover i{
-    color: #fff;
+    color: var(--white);
 }
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon .icon ul{
@@ -306,7 +307,7 @@ p{
 }
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon .icon ul li a{
-    color: #fff;
+    color: var(--white);
     --w: 42px;
     width: var(--w);
     height: var(--w);
@@ -322,7 +323,7 @@ p{
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon .icon ul li a i{
     font-size: 21px;
-    color: #fff;
+    color: var(--white);
 }
 
 .header-banner-wrapper .banner-section .left-block .bottom-icon .icon ul li:nth-child(4) a i{
@@ -518,7 +519,7 @@ p{
 .about-me-section .bottom-content .content h4{
     font-family: inherit;
     font-size: clamp(1.125rem, 1.0093rem + 0.6173vw, 1.75rem);
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     line-height: 1.3;
     text-transform: uppercase;
@@ -539,11 +540,11 @@ p{
 }
 
 .about-me-section .bottom-content .content:hover span{
-    color: #fff;
+    color: var(--white);
 }
 
 .about-me-section .bottom-content .content:hover h5{
-    color: #fff;
+    color: var(--white);
 }
 
 .about-me-section .right-block .top-heading {
@@ -557,7 +558,7 @@ p{
 .about-me-section .right-block .bottom-content .content p{
     font-family: inherit;
     font-size: clamp(0.875rem, 0.8171rem + 0.3086vw, 1.1875rem);
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     line-height: 1.6;
     padding: 0;
@@ -569,7 +570,7 @@ p{
 }
 
 .about-me-section .right-block .bottom-content .content span{
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
 }
 /* About Me Section End */
@@ -578,7 +579,7 @@ p{
 /* My Portfolo section Start */
 .my-portfolio-section{
     background-color: var(--blue-bcg);
-    padding: 70px 0;
+    padding: 70px 0 50px 0;
     margin-top: -1px;
     position: relative;
 }
@@ -596,19 +597,15 @@ p{
     filter: blur(150px);
 }
 
-.my-portfolio-section .row{
-    --bs-gutter-x: 2.5rem;
-}
-
 .my-portfolio-section .card{
     background-color: #140c1c;
-    height: 480px;
+    /* height: 480px; */
     border-radius: 10px;
     overflow: hidden;
     padding: 30px 30px 0 30px;
     border: inherit;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     z-index: 99;
 }
 
@@ -651,8 +648,8 @@ p{
 
 .my-portfolio-section .card .content .text h5{
     font-family: inherit;
-    font-size: 30px;
-    color: #fff;
+    font-size: clamp(1.125rem, 0.9398rem + 0.9877vw, 2.125rem);
+    color: var(--white);
     font-weight: 700;
     line-height: 1.3;
     text-transform: capitalize;
@@ -663,8 +660,8 @@ p{
 
 .my-portfolio-section .card .content .text p{
     font-family: inherit;
-    font-size: 16px;
-    color: #fff;
+    font-size: clamp(0.875rem, 0.8171rem + 0.3086vw, 1.1875rem);
+    color: var(--white);
     font-weight: 400;
     line-height: 1.3;
     padding: 0;
@@ -677,7 +674,7 @@ p{
 
 .my-portfolio-section .card .content .icon i{
     font-size: 30px;
-    color: #fff;
+    color: var(--white);
 }
 
 .my-portfolio-section .card:hover .content .icon {
@@ -806,7 +803,6 @@ p{
 /* Contact Section Start */
 .contact-section{
     background-color: var(--blue-bcg);
-    margin-bottom: 150px;
     padding: 70px 0;
 }
 
@@ -829,7 +825,7 @@ p{
 .contact-section .left-block .top-heading p{
     font-family: inherit;
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     line-height: 1.4;
     padding: 0;
@@ -839,7 +835,7 @@ p{
 .contact-section .left-block .form-block .form-control{
     font-family: inherit;
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     padding: 15px;
     margin-bottom: 20px;
@@ -864,7 +860,7 @@ p{
 .contact-section .left-block .form-block .submit-btn{
     font-family: inherit;
     font-size: 15px;
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     line-height: 1;
     background-size: 200%;
@@ -902,6 +898,10 @@ p{
     position: relative;
 }
 
+.contact-section .right-block .icon-box a{
+    display: contents;
+}
+
 .contact-section .right-block .icon-box a::after{
     content: '';
     position: absolute;
@@ -924,7 +924,7 @@ p{
     flex-direction: column;
     border-radius: 50px;
     font-size: 23px;
-    color: #fff;
+    color: var(--white);
 }
 
 .contact-section .right-block .icon-box:nth-child(1) .icon i{
@@ -939,7 +939,7 @@ p{
 .contact-section .right-block .icon-box .text span{
     font-family: inherit;
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     line-height: 1.3;
     text-transform: capitalize;
@@ -951,46 +951,97 @@ p{
 .contact-section .right-block .icon-box .text h5{
     font-family: inherit;
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     line-height: 1.3;
     padding: 0;
     margin: 0;
 }
-
-
-
-
-
-
-
 /* Contact Section End */
 
 
 
+/* Footer Satrt  */
+footer{
+    background-color: var(--black-bcg);
+    padding: 60px 0 30px 0;
+}
 
+footer .icon-block {
+    margin: 0 auto;
+    text-align: center;
+}
 
+footer .icon-block .icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+} 
 
+footer .icon-block .icon ul li a{
+    color: var(--white);
+    --w: 44px;
+    width: var(--w);
+    height: var(--w);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
 
+footer .icon-block .icon ul li a i{
+    font-size: 22px;
+    color: var(--white);
+}
 
+footer .icon-block .icon ul li:nth-child(4) a i{
+    font-size: 25px;
+}
 
+footer .icon-block .icon ul li a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    transform: scale(0);
+    transition: transform 0.3s;
+    border-radius: 50%;
+    z-index: -1;
+}
 
+footer .icon-block .icon ul li a:hover::after{
+    transform: scale(1.1);
+}
 
+footer .copy-right{
+    padding-top: 20px;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
+footer .copy-right p{
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 300;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+}
+/* Footer End  */
 
 
 
 /* Customize Scrollbar */
 ::-webkit-scrollbar{
-	width: 8px;
+	width: 9px;
 }
 
 ::-webkit-scrollbar-track{
@@ -1003,17 +1054,7 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Scroll To Top Button */
 .scroll-top {
     position: fixed;
     bottom: 20px;
@@ -1032,9 +1073,14 @@ p{
 }
 
 .scroll-top svg circle {
-    stroke-dasharray: 252; /* Circumference of the circle */
-    stroke-dashoffset: 252; /* Initially hidden */
+    stroke-dasharray: 252;
+    stroke-dashoffset: 252;
     transition: stroke-dashoffset 0.3s;
+    stroke: var(--primary-color);
+}
+
+.scroll-top svg path{
+    stroke: var(--primary-color);
 }
 
 .scroll-top.show {
@@ -1044,3 +1090,4 @@ p{
 .scroll-top:hover svg {
     transform: rotate(0deg);
 }
+
