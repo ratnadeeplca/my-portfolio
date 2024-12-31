@@ -108,6 +108,7 @@
         position: absolute;
         right: 0;
         top: 50px;
+        display: none;
         background-color: #0f0715;
         border: inherit;
         width: 100%;
