@@ -1,13 +1,13 @@
-function push_css_link(url){
-    const timestamp = new Date().getTime(); // Get current timestamp
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = `./assets/css/${url}.css?version=${timestamp}`; // Append timestamp
-    document.head.appendChild(link);
-}
+// function push_css_link(url){
+//     const timestamp = new Date().getTime(); // Get current timestamp
+//     const link = document.createElement("link");
+//     link.rel = "stylesheet";
+//     link.href = `./assets/css/${url}.css?version=${timestamp}`; // Append timestamp
+//     document.head.appendChild(link);
+// }
 
-push_css_link("style");
-push_css_link("responsive");
+// push_css_link("style");
+// push_css_link("responsive");
 
 
 
